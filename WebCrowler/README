@@ -1,0 +1,26 @@
+DINU IOAN 
+Grupa: 323CC
+
+
+
+-> Am realizat conexiunea dintre server si client prin intermediul conexiunii TCP utilizata si la tema 2.
+SERVER
+-> Comanda de download porneste doar daca s-au conectat 5 clienti.
+-> Comanda quit inchide pe rand conexiunile cu clientii conectat.
+-> Comanda status afiseaza ipul si portul fiecarui client conectat.
+-> Daca este precizata optiunea -o mesajele de status si eroare vor fi scrise in fisierele corespunzatoare, daca nu vor fi scrise in terminal.
+
+CLIENT
+-> Clientul realizeaza conexiunea HTTP la fel ca la laborator.
+-> Am folosit functia READLINE facuta la laborator.
+-> Clientul downloadeaza linkul primit de server, le pune in fisiere organizate ca in linkul primit 
+		Exemplu:
+			Pentru linkul ceva/altceva/index.html folderele vor fi ceva/altceva iar in folderul altceva se va afla fisierul index.html.
+-> dupa terminarea downloadului clientul se opreste din functionare.
+-> Daca este precizata optiunea -o mesajele de status si eroare vor fi scrise in fisierele corespunzatoare, daca nu vor fi scrise in terminal.
+-> Clientul scrie mesajele sale in fisierul personal user_log.
+
+Utilizare SERVER: ./Server.out -r -e -o <fisier_log> -p <port>
+Utilizare CLIENT: ./Client.out -o <fisier_log> -a <ip> -p <port>
+
+PRECIZARE: am retrimis tema cu intarziere de o zi doar pentru ca am facut clientul sa ruleze pentru https si nu http.Pur si simplu in loc sa mut cursorul intr-un link dupa "http://" adica cu 7 unitati mutam cu 8 pentru "https://", este singura diferenta.

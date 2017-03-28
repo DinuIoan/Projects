@@ -1,0 +1,32 @@
+>echo Comenzi test
+Comenzi test
+>userinfo
+Username: guest
+Nume: null
+Prenume: null
+DataCreare 07/01/16 23:01:48
+DataLogare: 07/01/16 23:01:48
+>mkdir student
+<Esuat
+>newuser Dnu pass Dinu Ioan
+<Succes
+>login Dnu pass
+<Succes
+>userinfo
+Username: Dnu
+Nume: Dinu
+Prenume: Ioan
+DataCreare 07/01/16 23:13:35
+DataLogare: 07/01/16 23:13:40
+>touch File.txt 0 -r-
+<Succes
+>cat File.txt
+File test!
+>logout
+<Succes
+>userinfo 
+Username: guest
+Nume: null
+Prenume: null
+DataCreare 07/01/16 23:01:48
+DataLogare: 07/01/16 23:14:10

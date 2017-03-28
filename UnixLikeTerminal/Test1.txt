@@ -1,0 +1,36 @@
+>userinfo
+Username: guest
+Nume: null
+Prenume: null
+DataCreare 07/01/16 23:01:48
+DataLogare: 07/01/16 23:01:48
+>login root rootpass
+<Succes
+>mkdir Student
+<Succes
+>mkdir Student -r-
+<Succes
+>touch File1.txt
+<Succes
+>touch File2.txt 0 -r-
+<Succes
+>touch File3.txt -r-
+<Succes
+>touch File4.txt 0
+<Succes
+>newuser Dinu.Ioan password Dinu Ioan
+<Succes
+>login Dinu.Ioan password
+<Succes
+>userinfo
+Username: Dinu.Ioan
+Nume: Dinu
+Prenume: Ioan
+DataCreare 07/01/16 23:08:16
+DataLogare: 07/01/16 23:08:26
+>logout
+<Succes
+>echo Test
+Test
+>cat File3.txt
+File test!
