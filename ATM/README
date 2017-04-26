@@ -1,0 +1,15 @@
+Dinu Ioan
+Grupa: 333CC
+
+FUNCTIONALITATE:
+->Am implementat serverul si clientul cum am facut si la laborator, folosind functionalitatea functiei "select" pentru a se putea conecta mai multi clienti.
+->Compar buffer-ul primit de la client si execut pentru fiecare ramura comanda specifica.
+		-> LOGIN: compar numarul de card din user_data_file cu numarul de card primit, daca este corect trec la verificarea pinului, daca nu trimit codul de erore specific. Daca si pinul este gresit, implementez numarul de incercari pe care le are acel user(numar de card) si daca a ajuns la 3 il blochez si nu ii mai permit sa se conecteze pana nu se debloca. Daca este si pinul corect insa este deja o sesiune deschisa, returnez codul de eroare specific. Fiecare user care se conecteaza schimba valoarea din vectorul "conectedUsers" din 0 in 1 si asa verific daca un user este deja conectat.
+		-> LISTSOLD: afisez soldul.
+		-> GETMONEY: modific in fisierul user_data_file soldul clculat prin sold - banii retrasi.
+		-> PUTMONEY: exact ca la GETMONEY.
+		-> QUIT - Client: inchid conexiunea, termin executia clientului, iar in server in "conectedUsers" la userul respectiv pun "0" pentru a putea verifica daca este conectat sau nu ulterior la login.
+
+
+PROBLEME INTAMPINATE:
+	-> Destul de multe, in principiu la scrierea in fisier la o locatie specifica (inlocuirea soldului)
