@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_below="@+id/lvl_toolbar_lvl_1_picture_1"
+        android:layout_alignParentRight="true"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="HINT"
+        android:background="@drawable/btn_hint2"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"/>
+
+    <Toolbar
+        android:id="@+id/lvl_toolbar_lvl_1_picture_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar">
+        <ImageButton
+            android:id="@+id/imBtn_back_lvl_1_picture_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_chevron_left"
+            android:onClick="back"
+            />
+        <TextView
+            android:nextFocusLeft="@+id/imBtn_back_lvl_1_picture_1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:paddingBottom="2dp"
+            android:text="Back"
+            android:textSize="30sp"
+            />
+    </Toolbar>
+
+    <ImageView
+        android:id="@+id/image_picture2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/lvl_toolbar_lvl_1_picture_1"
+        android:layout_centerInParent="true"
+
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/txt_input"
+        android:checked="false"
+        android:checkMarkTint="#82FA58"
+        android:inputType="text"
+        android:padding="15dp"
+        />
+
+    <CheckedTextView
+        android:id="@+id/checkTextView"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/txt_input"
+        android:inputType="text"
+        android:checkMark="@drawable/ic_check_circle"
+        android:checked="false"
+        android:textSize="20sp"
+        android:padding="10dp"
+
+        />
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_check"-->
+    <!--android:layout_below="@id/editText"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_margin="50dp"-->
+    <!--android:background="@drawable/btn_check_text"-->
+    <!--android:text="Check"-->
+    <!--android:onClick="checkText"/>-->
+
+</RelativeLayout>

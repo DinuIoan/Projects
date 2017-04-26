@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GuessTheCar2</string>
+    <string name="play_button">Play !</string>
+    <string name="level_1">LEVEL 1:\nLOGO</string>
+    <string name="level_2">LEVEL 2:\nCARS</string>
+    <string name="level_3">LEVEL 3:\nCAR PARTS</string>
+    <string name="level_4">LEVEL 4 </string>
+</resources>
